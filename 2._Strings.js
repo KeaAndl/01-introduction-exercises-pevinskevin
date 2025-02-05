@@ -7,12 +7,16 @@ const numberTwo = "2.30";
 // add those two numbers and show the result
 // you cannot touch line 1 neither line 2
 
+console.log(Number(numberOne) + Number(numberTwo));
+
 
 // --------------------------------------
 // Exercise 4 - Add the numbers and the total with 2 decimals
 
 const anotherNumberOne = "1.10";
 const anotherNumberTwo = "2.30";
+
+console.log(Number(anotherNumberOne).toFixed(2) + Number(anotherNumberTwo).toFixed(2));
 
 
 // --------------------------------------
@@ -24,7 +28,7 @@ const three = 98;
 
 // Show in the console the avg. with 5 decimals
 
-
+console.log(((one + two + three)/3).toFixed(5))
 
 
 // --------------------------------------
@@ -33,8 +37,7 @@ const three = 98;
 const letters = "abc";
 // Get me the character "c"
 
-
-
+console.log(letters.at(2))
 
 // --------------------------------------
 // Exercise 7 - Replace
@@ -42,6 +45,9 @@ const letters = "abc";
 const fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
+
+const updatedFact = fact.replace("javascript", "Javascript")
+console.log(updatedFact)
 
 
 // --------------------------------------
